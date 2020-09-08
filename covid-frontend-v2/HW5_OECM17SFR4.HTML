@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/covid.css">
+</head>
+<body>
+    <div class="header">
+        <div>
+            <p id="logo">p</p>
+        </div>
+        <div class="text">
+            <p>PaSe Covid-19</p>
+        </div>
+    </div>
+
+    <div class="dashboard">
+        <div class="cases">
+            <p>Confirmed<i class="fa fa-caret-up fa-lg"></i></p>
+            <span id='total-cases'></span>
+        </div>
+        <div class="cases">
+            <p>Recovered <i class="fa fa-caret-down fa-lg"></i></p>
+            <span id="total-recovered"></span>
+        </div>
+        <div class="cases">
+            <p>Active<i class="fa fa-caret-up fa-lg"></i></p>
+            <span id="total-active"></span>
+        </div>
+        <div class="cases">
+            <p>Deaths<i class="fa fa-caret-up fa-lg"></i></p>
+            <span id="total-deaths"></span>
+        </div>
+    </div>
+
+    <div class="data">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Country_Region</th>
+                    <th>Active</th>
+                    <th>Recovered</th>
+                    <th>Deaths</th>
+                    <th>Confirmed</th>       
+                </tr>
+            </thead>
+            <tbody id="tbd">
+                <div id="loading"></div>
+            </tbody>    
+        </table>
+
+        <div>
+            <div class="tips">
+                <p>Health Tips</p>
+                <img src="img/covid19b.jpg" alt="a question mark" width="195" height="110px">
+            </div>
+            <div class="tips">
+                <p>News &amp; Updates</p>
+                <img src="img/covid19b.png" alt=" a black head with a nose mask on" width="195" height="110px">
+            </div>
+            <div class="tips">
+                <p>Subscribe to our newsletter</p>
+                <img src="img/download.jpg" alt="an envelope with the sign @ written on it" width="195" height="90px">
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

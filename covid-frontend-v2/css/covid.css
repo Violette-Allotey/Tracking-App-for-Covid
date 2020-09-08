@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: purple;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
+}
+
+#logo {
+    background-color: red;
+    width: 2.5em;
+    margin-left: 0.5em;
+    color: #ffffff;
+    text-align: center;
+    height: 2em;
+    box-shadow: 1px 4px 1px brown;
+    border-radius: 0.1em;
+    padding-top: 0.6em;
+    font-size: 3em;
+}
+
+.header {
+    display: flex;
+}
+
+.text {
+    margin-left: 2em;
+    font-weight: 700;
+    color: red;
+    padding-top: 3.5em;
+    font-size: 22px;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3em;
+}
+
+.cases {
+    width: 14em;
+    box-shadow: 1px 2px #f19090;
+    border: 0.1px solid #f5bbbb;
+    padding-bottom: 2em;
+    padding-left: 0.5em;
+}
+
+.cases span {
+    font-weight: 700;
+}
+
+.cases .fa-caret-up {
+    color: red;
+}
+
+.cases .fa-caret-down {
+    color: green;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.data table {
+    width: 58em;
+    margin-left: 7em;
+}
+
+.tips {
+    width: 14.8em;
+    border: 1px solid #e2e2e2;
+    margin-right: 6.5em;
+    margin-bottom: 2em;
+    height: 11em;
+    background-color:rgb(90,91, 159);
+}
+
+.tips p {
+    text-align: center;
+    color: blueviolet;
+    border: .1px solid #e49191;
+    background-color: white;
+    font-weight: 800;
+    width: 12em;
+    margin-left: 1em;
+    border-radius: 5px;
+}
+
+thead {
+    background-color: rgb(8, 110, 141);
+}
+
+.cases {
+    background-color: rgb(8, 110, 141);
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: white;
+}
+
+img {
+    margin-left: 1em;
+}
+
+#loading {
+      width: 70px;
+      height: 70px;
+      border: 5px solid cornflowerblue;
+      border-top-color:red;
+      border-bottom-color: yellow;
+      border-left-color: orange;
+      position: absolute;
+      border-radius: 100%;
+      left: 30em;
+      top: 30em;
+      animation: round 1s linear infinite;
+}
+
+@keyframes round {
+    from {
+        transform: rotate(0deg);
+    }
+     
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .header {
+        display: flex;
+        margin: 6em;
+    }
+
+
+    .dashboard {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cases {
+        width: 82%;
+        display: flex;
+        margin-bottom: 1em;
+        margin-left: 2em;
+    }
+
+    .data table {
+        width: 31.5em;
+        margin-left: 2em;
+        margin-right: 1em;
+        margin-top: 5em;
+    }
+
+    .tips {
+        margin-top: 2em;
+        margin-left: 9em; 
+    }
+
+    .tips p {
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+
+    #loading {
+        top: 53em;
+        left: 15em;
+    }
+
+    .data {
+        flex-direction: column;
+    }
+}
+
+    
